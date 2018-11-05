@@ -37,7 +37,7 @@ To decompose a network, use the following command
 
 ```
 
-For example, suppose the VGG-16 network is in folder `models/` and named as `resnet-18.prototxt` and `resnet-18.caffemodel`, you can decompose all layers with same number of channels:
+For example, suppose the Resnet-18 network is in folder `models/` and named as `resnet-18.prototxt` and `resnet-18.caffemodel`, you can decompose all layers with same number of channels:
 ```Shell
     python main.py -model models/resnet-18.prototxt -weight models/resnet-18.caffemodel -bottleneck 0.5 -j 6
 ```

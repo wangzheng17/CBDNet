@@ -1,5 +1,5 @@
-# CBDNet
-In this repository, we released code for composite binary decomposition (CBD).
+# Composite Binary Decomposition Networks
+In this repository, we released code for Composite Binary Decomposition Networks (CBDNet).
 
 ### Contents
 1. [Installation](#installation)
@@ -18,7 +18,7 @@ In this repository, we released code for composite binary decomposition (CBD).
 ```
 2. Clone this repository 
 ```Shell
-    https://github.com/zhengwang17/CBDNet.git
+    https://github.com/wangzheng17/CBDNet.git
 ```
     
 ### Usage  

@@ -37,9 +37,9 @@ To decompose a network, use the following command
 
 ```
 
-For example, suppose the VGG-16 network is in folder `models/` and named as `vgg.prototxt` and `vgg.caffemodel`, you can decompose all layers with same number of channels:
+For example, suppose the VGG-16 network is in folder `models/` and named as `resnet-18.prototxt` and `resnet-18.caffemodel`, you can decompose all layers with same number of channels:
 ```Shell
-    python main.py -model models/vgg.prototxt -weight models/vgg.caffemodel -cbd -bottleneck 0.5 -j 6
+    python main.py -model models/resnet-18.prototxt -weight models/resnet-18.caffemodel -cbd -bottleneck 0.5 -j 6
 ```
 
 Note: please use same prefix name for prototxt and weights file, a floder will be created in "\models\". `btn_xx_a_list.npy` will be stored for reusing, where `xx` is the bottleneck ratio. Results are saved under `j_model` sub-directory for same number of non-compressed channel setting and same number of overall channel setting. The parameter 'j' in the result indicates overall channels include the sign.

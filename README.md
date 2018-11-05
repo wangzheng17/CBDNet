@@ -12,7 +12,7 @@ In this repository, we released code for Composite Binary Decomposition Networks
 ```Shell
     git clone https://github.com/BVLC/caffe.git
     cd caffe
-    # modify Makefile.config to the path of the library on your machine, please make sure the python3 interface is supported
+    # modify Makefile.config to the path of the library on your machine, please make sure the python interface is supported
     make -j8
     make pycaffe
 ```
@@ -24,16 +24,11 @@ In this repository, we released code for Composite Binary Decomposition Networks
 ### Usage  
 1. Download the original model files (.prototxt and .caffemodel) and move them to the directory of `models`
 
-2. Make proper configurations in `config.py`
-   To make sure the network optimization works well, please enter the file `config.py` and change the configuration of the parameters according to the comment above them.
-
-   Note, among the hyperparameters above the `SD_Param`,`ND_Param`,`CD_Param` and `device_id` could also be specified in command line (see section 3), while other parameters must be set correctly according to the comment above.
-
-3. Command Line Usage
-To decouple a network, use the following command
+2. Command Line Usage
+To decompose a network, use the following command
 ```Shell
-    python main.py <optional arguments>
-    optional arguments for CBDNet:
+    python main.py <arguments>
+    arguments for CBDNet:
         -bottleneck           bottleneck ratio value (Numbers like 0.2,0.3,0.4,0.5,...)
         -j                    the number of overall channel except the sign channel(overall-fix channel, post-variable channel. Numbers like 5,6,7,8,...)
         -model MODEL          caffe prototxt file path

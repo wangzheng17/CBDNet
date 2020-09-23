@@ -47,7 +47,7 @@ Using model name compatiable with that in `line 33-43, rank_a.py`. These lines c
 
 ### Reference
 
-This work is based on our work *Composite Binary Decomposition Networks (AAAI2019)*. If you think this is helpful for your research, please consider append following bibtex config in your latex file.
+This work is based on our work *Composite Binary Decomposition Networks (AAAI2019)*[[Paper]](https://arxiv.org/abs/1811.06668.pdf). If you think this is helpful for your research, please consider append following bibtex config in your latex file.
 
 ```Latex
 ```
